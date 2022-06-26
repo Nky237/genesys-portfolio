@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER SECTION */
+.header{
+    background-color: black; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+.header .logo h1{
+    color: white;
+    padding: 20px;
+}
+.navy{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-left: 200px;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px;
+    
+}
+nav ul li a{
+    padding-left: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    align-items: center;
+}
+i{
+    color: white;
+    
+
+}
+.log{
+    margin-left: 70px;
+}
+
+
+/* BACKGROUND IMAGE */
+.down-hero{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.7)), url(./image/disc_oxpol_nkorea.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: white;
+}
+.text-center{
+    text-align: center;
+    padding-top: 140px;
+}
+.text-center h1, .text-center p{
+    padding-bottom: 15px;
+}
+.text-center button{
+    height: 50px;
+    width: 15%;
+    background-color: rgb(87, 87, 236);
+    border-radius: 20%;
+    border: none;
+    margin-top: 20px;
+}
+.text-center button:hover{
+    background-color: blue;
+    animation: 1s ease;
+}
+.animated-text{
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+.animated-text p{
+    color: rgb(87, 87, 236);
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 50px;
+}
+.animated-text p:nth-child(1){
+    animation: move 10s infinite;
+}
+@keyframes move{
+0%{
+    margin-top: 0;
+}
+25%{
+    margin-top: -70px;    
+}
+50%{
+    margin-top: -140px
+
+}
+75%{
+    margin-top: -70px;
+}
+100%{
+    margin-top: 0px;
+}
+ 
+
+}
+
+
+/* ABOUT SECTION */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.section-title{
+    position: relative;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+.section-title:before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 190px;
+    height: 4px;
+    background-color: #3a6cf4 ;
+    transform: translateX(-50%);
+}
+.section-title:after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3a6cf4 ;
+    transform: translateX(-50%);
+}
+
+/* About */
+.about .content{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.about .content .col-left{
+    position: relative;
+    width: 50%;
+}
+.about .content .col-right{
+    position: relative;
+    width: 45%;
+}
+
+.about .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+/* .about .content .col-left .img-card lottie-player  {
+    top: 20;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+} */
+.about .content .col-right .content-title{
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.about .content .col-right .para-text{
+    text-align: justify;
+    font-size: 1em;
+}
+
+
+/* SKILL */
+.skills{
+    background-color: #000016;
+
+}
+.skills .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.skills .content .col-left p{
+    text-align: justify;
+    font-size: 1em;
+}
+
+.skills .content .col-right{
+    position: relative;
+    width: 46%;
+}
+.skills .content .col-right .bar{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.skills .content .col-right .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .content .col-right .bar .info span{
+    font: 18px;
+    font-weight: 500;
+}
+.skills .content .col-right .bar .info .line{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #999999;
+    border-radius: 2px;
+}
+.skills .content .col-right .bar .info .line::before{
+    content: '' ;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.skills .content .col-right .bar .html::before{
+    width: 95%;
+    background: #e45126;
+    
+}
+.skills .content .col-right .bar .css::before{
+    width: 85%;
+    background: #0c73b8;
+
+}
+.skills .content .col-right .bar .line .javascript::before{
+    width: 80%;
+    background: #e3a324;
+
+}
+
+/* SERVICES */
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.services .title p{
+    font-size: 1em;
+    width: 80%;
+}
+.services .content .card{
+    background-color: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%);
+
+
+}
+.services .content .card .service-icon{
+    color: #3a6cf4;
+    font-size: 2em;
+    text-align: center;
+    transform: transform 0.5s ease;
+}
+.services .content .card:hover .service-icon{
+    transform: translateY(-10px);
+}
+.services .content .card .info{
+    text-align: center;
+}
+.services .content .card .info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.projects{
+    background-color: black;
+}
+.projects .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.projects .content .card{
+width: 340px;
+margin: 15px;
+}
+.projects .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+.projects .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.projects .content .card .card-img img:hover{
+    transition: 0.9s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+/* CONTACTS */
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contact .content .row .card{
+    background-color: #fff;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%) 
+}
+.contact .content .row .card .contact-icon{
+    color: #3a6cf4;
+    font-size: 2em;
+    text-align: center;
+    transition:  transform 0.5s ease;
+}
+.contact .content .row .card:hover .contact-icon{
+    transform: translateY(-10px);
+}
+.contact .content .row .card .info{
+    text-align: center;
+}
+.contact .content .row .card .info h3{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+.contact .content .row .card .info span{
+    color: #666;
+    font-weight: 500;
+}
+.contact-form{
+    background-color: white;
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow:0 5px 5px rgba(1 1 1 / 15%)  ;
+}
+.contact-form h3{
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact-form h3{
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    
+}.contact-form .input-box .send-btn{
+    color: white;
+    background-color: #3a6cf4;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+
+/* FOOTER */
+
+footer{
+    background: #000;
+    height: 200px;
+    color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    font-size: 23px;
+}
+    
